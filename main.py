@@ -25,14 +25,13 @@ def calc_total(bill):
     tip = calc_tip(bill)
     bill += tip
     print(f"total: {bill}")
-    return bill
 
 
 def main():
     # simple_add("tie ", "knot")
     bill = 100
     print(f"bill: {bill}")
-    total = calc_total(bill)
+    calc_total(bill)
 
 
 if __name__ == "__main__":
