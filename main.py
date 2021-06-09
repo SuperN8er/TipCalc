@@ -5,15 +5,15 @@ def simple_add(x, y):
     print(x + y)
 
 
-def calc_tax(bill):
-    tax = bill * 0.08
+def calc_tax(bill, tax_amt=0.08):
+    tax = bill * tax_amt
     tax = round(tax, 2)
     print(f"tax: {tax}")
     return tax
 
 
-def calc_tip(bill):
-    tip = bill / 5
+def calc_tip(bill, tip_amt=0.18):
+    tip = bill * tip_amt
     tip = round(tip, 2)
     print(f"tip: {tip}")
     return tip
